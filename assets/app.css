@@ -4,6 +4,15 @@
   margin: 0 auto;
 }
 
+.card {
+  width: 120px;
+  height: 180px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+}
+
 .container {
   float: left;
   width: 122px;
@@ -12,15 +21,13 @@
   perspective: 800px;
 }
 
-.card {
-  width: 120px;
-  height: 180px;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-}
-
 .card.flipped {
   transform: rotateY( 180deg );
+  -webkit-transform: rotateY(180deg); /* Safari & Chrome */
+  -moz-transform: rotateY(180deg); /* Firefox */
+  -ms-transform: rotateY(180deg); /* Internet Explorer */
+  -o-transform: rotateY(180deg); /* Opera */
+
 }
 
 .card div {
@@ -35,6 +42,10 @@
 
 .card .front {
   transform: rotateY( 180deg );
+  -webkit-transform: rotateY(180deg); /* Safari & Chrome */
+  -moz-transform: rotateY(180deg); /* Firefox */
+  -ms-transform: rotateY(180deg); /* Internet Explorer */
+  -o-transform: rotateY(180deg); /* Opera */
 }
 
 .congrats {
