@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-rm -rf ~/.maya-game
-mkdir ~/.maya-game
-cp -R out/* ~/.maya-game
+rm -rf ~/.mem-game
+mkdir ~/.mem-game
+cp -R out/* ~/.mem-game
 echo "now do: git checkout gh-pages"
 echo "then pub.sh"
