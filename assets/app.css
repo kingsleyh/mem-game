@@ -1,0 +1,56 @@
+.wrapper {
+  width: 900px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.container {
+  float: left;
+  width: 122px;
+  height: 182px;
+  position: relative;
+  perspective: 800px;
+}
+
+.card {
+  width: 120px;
+  height: 180px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped {
+  transform: rotateY( 180deg );
+}
+
+.card div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+
+
+.card .front {
+  transform: rotateY( 180deg );
+}
+
+.congrats {
+  top: 200px;
+  left: 50%;
+  margin: 20px;
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+.congrats span {
+  color: blue;
+  cursor: pointer;
+}
+
