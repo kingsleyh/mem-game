@@ -58,6 +58,7 @@
   position: absolute;
   background: #fff;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%); /* Safari & Chrome */
 }
 
 .congrats span {

@@ -53,19 +53,6 @@ type Msg
 
 -- MODEL
 
-
---cards : List String
---cards =
---    [ "dinosaur"
---    , "8-ball"
---    , "baked-potato"
---    , "kronos"
---    , "rocket"
---    , "skinny-unicorn"
---    , "that-guy"
---    , "zeppelin"
---    ]
-
 cards : List String
 cards =
     [ "ariel"
